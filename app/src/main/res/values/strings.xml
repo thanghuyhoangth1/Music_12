@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">IMusic</string>
+    <!--main activity-->
+    <string name="title_tab_online">Online</string>
+    <string name="title_tab_offline">Offline</string>
+    <string name="title_icon_search">Seach</string>
 </resources>
