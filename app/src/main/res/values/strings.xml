@@ -4,4 +4,10 @@
     <string name="title_tab_online">Online</string>
     <string name="title_tab_offline">Offline</string>
     <string name="title_icon_search">Seach</string>
+    <string name="title_genre_name_all_music">All-Music</string>
+    <string name="title_genre_name_all_audio">All-Audio</string>
+    <string name="title_genre_name_alternativerock">Alternativerock</string>
+    <string name="title_genre_name_ambient">Ambient</string>
+    <string name="title_genre_name_classical">Classical</string>
+    <string name="title_genre_name_country">Country</string>
 </resources>
