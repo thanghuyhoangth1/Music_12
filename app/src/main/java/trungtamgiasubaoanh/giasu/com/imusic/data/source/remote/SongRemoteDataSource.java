@@ -24,7 +24,7 @@ public class SongRemoteDataSource implements SongDataSource.RemoteDataSource {
     }
 
     @Override
-    public void getMusicRemote(int requesCode, String genre, int litmit, int offset, OnFetchDataListener<Song> listener) {
+    public void getMusicRemote(int requesCode, String genre, int litmit, int offset, OnFetchDataListener listener) {
         String url = Utils.createURL(genre, litmit, offset);
         RequestSongData requestSongData = new RequestSongData(requesCode, listener);
         requestSongData.execute(url);

@@ -1,7 +1,10 @@
 package trungtamgiasubaoanh.giasu.com.imusic.data.repository;
 
+import android.content.Context;
+
 import trungtamgiasubaoanh.giasu.com.imusic.data.model.GenreSongEntry;
 import trungtamgiasubaoanh.giasu.com.imusic.data.model.Song;
+import trungtamgiasubaoanh.giasu.com.imusic.data.model.SongLocalEntry;
 import trungtamgiasubaoanh.giasu.com.imusic.data.source.OnFetchDataListener;
 import trungtamgiasubaoanh.giasu.com.imusic.data.source.SongDataSource;
 
@@ -35,6 +38,13 @@ public class SongReponsitory implements SongDataSource.RemoteDataSource, SongDat
                                OnFetchDataListener<Song> listener) {
         if (mRemoteDataSource != null) {
             mRemoteDataSource.getMusicRemote(requesCode, genre, litmit, offset, listener);
+        }
+    }
+
+    @Override
+    public void getAllMusicOffline(@SongLocalEntry.RequestLocalAnotation int requestCode, OnFetchDataListener songOnFetchDataListener) {
+        if (mLocalDataSource != null) {
+            mLocalDataSource.getAllMusicOffline(requestCode, songOnFetchDataListener);
         }
     }
 }
